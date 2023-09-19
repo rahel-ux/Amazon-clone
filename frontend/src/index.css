@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+@layer components {
+  .header {
+    @apply flex items-center mx-4 text-white md:gap-4 gap-2
+  }
+  .links {
+    @apply flex flex-col text-center cursor-pointer;
+  }
+  .side_content {
+    @apply px-10 flex flex-col gap-3;
+  }
+  .sidebar_header {
+    @apply font-bold text-[18px];
+  }
+  .button {
+    @apply p-2 mx-auto text-xs md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400
+     border  border-yellow-300 rounded-sm focus:outline-none focus:ring-2 focus:ring-yellow-500 active:from-yellow-500 w-full;
+  } 
+  .subtotal {
+    @apply flex flex-col justify-between p-5 border-2 border-solid  rounded-sm w-[300px] h-[170px] bg-[#f3f3f3] border-gray-200
+  }
+  .loginButton {
+    @apply rounded-sm w-full h-[30px] border-solid border-2 mt-[10px] md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400
+      border-yellow-300  focus:outline-none focus:ring-2 focus:ring-yellow-500 active:from-yellow-500
+  }
+  .subtotalButton {
+    @apply bg-[#f0c14b] rounded-sm w-full h-[30px] border-2 border-solid mt-3 md:text-sm bg-gradient-to-b from-yellow-200 to-yellow-400
+      border-yellow-300  focus:outline-none focus:ring-2 focus:ring-yellow-500 active:from-yellow-500
+  }
+  /* .checkProductButton {
+    @apply  mt-[10px] border-solid  border border-b-[#ddd]  text-[#111]
+  } */
+}
